@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>เเสดงรายการทั้งหมด</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-item *ngFor="let show of member">
+    <ion-avatar>
+      <img src="../../assets/182ce976-c8f4-4e81-9b1b-568589019b44.jpg">
+    </ion-avatar>
+    <ion-label>
+      {{ show.id_stu }} {{ show.nname }}
+    </ion-label>
+    <ion-button slot="end" color="">แก้ไข</ion-button>
+  </ion-item>
+</ion-content>
